@@ -17,3 +17,11 @@ const compareGuesses = (humanGuess, computerGuess, target) => {
         return false;
     }
 }
+
+const updateScore = (winner) => {
+    if (winner === 'human') {
+        humanScore += 1;
+    } else {
+        computerScore += 1;
+    }
+}
